@@ -1,7 +1,5 @@
-let btn1 = document.querySelector("#btn1");
-let myTable = document.querySelector("#table");
-//const btn1 = document.getElementById("btn1");
-//const myTable = document.getElementById("table");
+const btn1 = document.querySelector("#btn1");
+const myTable = document.querySelector("#table");
 
 const tableInfo = {
   tableHeader: ["Student Name", "Age", "Phone", "Address"],

@@ -1,12 +1,11 @@
 body {
   text-align: center;
-
 }
-div{
+div {
   display: inline-block;
 }
 
-button{
+button {
   display: inline-block;
   padding: 10 px 20px;
 }
@@ -14,9 +13,20 @@ button{
 #table {
   display: block;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-th, td{
+th,
+td {
   border: 1px solid black;
   padding: 5px;
+}
 
+
+.city {
+  color: hsl(249, 76%, 45%);
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+  
+  
 }
