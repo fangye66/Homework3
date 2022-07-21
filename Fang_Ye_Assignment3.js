@@ -101,10 +101,10 @@ const select = document.getElementById("select");
 btn4.addEventListener("click", () => {
     
     dropDownList.forEach((e) => {
+        
         const option = document.createElement("option");
         txt = document.createTextNode(e.content);
         option.appendChild(txt);
-        option.setAttribute("value", e.content);
         select.appendChild(option);  
         
     });
