@@ -36,21 +36,21 @@ students = tableInfo.tableContent;
 headers = tableInfo.tableHeader;
 
 btn1.addEventListener("click", () => {
-  let table = document.createElement("table");
-  let headerRow = document.createElement("tr");
+  const table = document.createElement("table");
+  const headerRow = document.createElement("tr");
   headers.forEach((headerText) => {
-    let header = document.createElement("th");
-    let textNode = document.createTextNode(headerText);
+    const header = document.createElement("th");
+    const textNode = document.createTextNode(headerText);
     header.appendChild(textNode);
     headerRow.appendChild(header);
   });
   table.appendChild(headerRow);
 
   students.forEach((stu) => {
-    let row = document.createElement("tr");
+    const row = document.createElement("tr");
     Object.values(stu).forEach((text) => {
-      let cell = document.createElement("td");
-      let textNode = document.createTextNode(text);
+      const cell = document.createElement("td");
+      const textNode = document.createTextNode(text);
       cell.appendChild(textNode);
       row.appendChild(cell);
     });
@@ -99,15 +99,10 @@ const btn4 = document.getElementById("btn4");
 const select = document.getElementById("select");
 
 btn4.addEventListener("click", () => {
-    
-    dropDownList.forEach((e) => {
-        
-        const option = document.createElement("option");
-        txt = document.createTextNode(e.content);
-        option.appendChild(txt);
-        select.appendChild(option);  
-        
-    });
-   
+  dropDownList.forEach((e) => {
+    const option = document.createElement("option");
+    txt = document.createTextNode(e.content);
+    option.appendChild(txt);
+    select.appendChild(option);
   });
-  
+});
